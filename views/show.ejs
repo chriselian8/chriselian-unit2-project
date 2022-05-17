@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <title>Plan</title>
+  </head>
+  <body>
+    <header>
+      <h1><%=plan.name%></h1>
+      <nav>
+        <a href="/plans"><button>Back to Planner</button></a>
+        <a href="/plans/<%=plan._id%>/edit"><button>Edit Plan</button></a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="show-container">
+        <h2><%=plan.name%></h2>
+        <h3><%=plan.description%></h3>
+        <h3><%=plan.importance%></h3>
+        <h3><%=plan.deadline%></h3>
+        <h3><%=plan.progress%></h3>
+        <form action="/plans/<%=plan._id%>?_method=DELETE" method="POST">
+          <input id="delete" type="submit" value="Delete"/>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
