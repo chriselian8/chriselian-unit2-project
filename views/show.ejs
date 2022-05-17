@@ -20,8 +20,8 @@
         <h2><%=plan.name%></h2>
         <h3><%=plan.description%></h3>
         <h3><%=plan.importance%></h3>
-        <h3><%=plan.deadline%></h3>
         <h3><%=plan.progress%></h3>
+        <h3><%=plan.deadline%></h3>
         <form action="/plans/<%=plan._id%>?_method=DELETE" method="POST">
           <input id="delete" type="submit" value="Delete"/>
         </form>

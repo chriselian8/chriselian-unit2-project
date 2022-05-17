@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <title>Add a Plan</title>
+  </head>
+  <body>
+    <header>
+      <h1>Add a Plan!</h1>
+      <nav>
+        <a href="/plans"><button>Back to Planner</button></a>
+      </nav>
+    </header>
+    <div class="container">
+      <form id="edit-plan" action="/plans" method="POST">
+        <label>Name:</label><input placeholder="Plan name here" type="text" name="name" /><br/>
+        <label>Description:</label><input placeholder="Write a Description" type="text" name="description" /><br/>
+        <label>Importance:</label><input placeholder="How important?" type="text" name="importance" /><br/>
+        <label>Deadline:</label><input placeholder="When?" type="text" name="deadline" /><br/>
+        <label>Progress:</label><input placeholder="Progress?" type="text" name="progress" /><br/>
+        <input id="save-changes" type="submit" value="Add Plan"/>
+      </form>
+    </div>
+  </body>
+</html>
