@@ -4,11 +4,11 @@ const plansList = require('../models/plansdb.js')
 const Plans = require('../models/plansschema.js')
 
 //SEED
-router.get('/seed', (req, res) => {
-  Plans.create(plansList, (err, allPlans) => {
-    res.redirect('/')
-  })
-})
+// router.get('/seed', (req, res) => {
+//   Plans.create(plansList, (err, allPlans) => {
+//     res.redirect('/')
+//   })
+// })
 
 //INDEX
 router.get('/', (req, res) => {

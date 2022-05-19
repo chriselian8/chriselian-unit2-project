@@ -1,0 +1,122 @@
+html {
+  margin: 0;
+}
+body {
+  background-image: url(https://media.istockphoto.com/photos/blackboard-picture-id636142452?b=1&k=20&m=636142452&s=170667a&w=0&h=nVb58gVvgYUbHIsxsRA0oHM2CnQ6NRVmgeDs52iZV0Q=);
+  font-family: 'Dancing Script', cursive;
+  background-size: cover;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://waltriphomestead.com/wp-content/uploads/2021/05/chalkboard-jpeg.jpg);
+  box-shadow: 3px 3px 3px black;
+  text-align: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+header h1 {
+  color: white;
+  padding: 0px 5px 10px 5px;
+  font-size: 50px;
+}
+header nav {
+  padding: 5px;
+}
+.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.plan-container {
+  background-image: url(https://c1.wallpaperflare.com/preview/265/345/113/paper-page-background-texture.jpg);
+  font-family: 'Dancing Script', cursive;
+  height: 200px;
+  width: 190px;
+  margin: 5px;
+  box-shadow: 5px 5px 7px black;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-shadow: 1px 1px 10px gray;
+}
+a:active {
+  text-shadow: 1px 1px 10px gray;
+}
+button {
+  font-family: monospace;
+  border-radius: 12px;
+  padding: 7px;
+  font-size: 15px;
+  margin: 5px;
+  background-color: white;
+}
+button:hover {
+  box-shadow: 1px 1px 10px black;
+  font-size: 20px;
+}
+.show-container {
+  background-image: url(https://c1.wallpaperflare.com/preview/265/345/113/paper-page-background-texture.jpg);
+  padding: 10px;
+  width: 45%;
+  height: auto;
+  text-align: center;
+  margin: 5px;
+}
+#delete {
+  font-family: monospace;
+  background-color: white;
+  padding: 7px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+#delete:hover {
+  font-size: 20px;
+  color: red;
+  box-shadow: 1px 1px 10px red;
+}
+#edit-plan {
+  background-image: url(https://c1.wallpaperflare.com/preview/265/345/113/paper-page-background-texture.jpg);
+  text-align: center;
+  width: 45%;
+  box-shadow: 5px 5px 7px black;
+  padding: 10px;
+}
+#edit-plan label {
+  display: inline-block;
+  clear: left;
+  width: 100px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+#edit-plan input {
+  margin-left: 5px;
+  padding: 15px;
+}
+#save-changes {
+  margin-top: 15px;
+  font-family: monospace;
+  background-color: white;
+  padding: 7px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+#save-changes:hover {
+  font-size: 20px;
+  color: green;
+  box-shadow: 1px 1px 10px green;
+}

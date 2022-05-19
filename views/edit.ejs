@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Edit the Plan</title>
   </head>
   <body>
@@ -16,11 +19,11 @@
     </header>
     <div class="container">
       <form id="edit-plan" action="/plans/<%=plan._id%>?_method=PUT" method="POST">
-        <label>Name:</label><input placeholder="Plan name here" type="text" name="name" value="<%=plan.name%>" /><br/>
-        <label>Description:</label><input placeholder="Write a Description" type="text" name="description" value="<%=plan.description%>" /><br/>
-        <label>Importance:</label><input placeholder="How important?" type="text" name="importance" value="<%=plan.importance%>" /><br/>
-        <label>Deadline:</label><input placeholder="When?" type="text" name="deadline" value="<%=plan.deadline%>" /><br/>
-        <label>Progress:</label><input placeholder="Progress?" type="text" name="progress" value="<%=plan.progress%>" /><br/>
+        <label>Name : </label><input placeholder="Plan name here" type="text" name="name" value="<%=plan.name%>" /><br/>
+        <label>Description : </label><input placeholder="Write a Description" type="text" name="description" value="<%=plan.description%>" /><br/>
+        <label>Importance : </label><input placeholder="How important?" type="text" name="importance" value="<%=plan.importance%>" /><br/>
+        <label>Deadline : </label><input placeholder="When?" type="text" name="deadline" value="<%=plan.deadline%>" /><br/>
+        <label>Progress : </label><input placeholder="Progress?" type="text" name="progress" value="<%=plan.progress%>" /><br/>
         <input id="save-changes" type="submit" value="Save Changes"/>
       </form>
     </div>
