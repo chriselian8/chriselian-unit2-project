@@ -67,6 +67,8 @@ button:hover {
   font-size: 20px;
 }
 .show-container {
+  display: flex;
+  flex-direction: column;
   background-image: url(https://c1.wallpaperflare.com/preview/265/345/113/paper-page-background-texture.jpg);
   padding: 10px;
   width: 45%;
