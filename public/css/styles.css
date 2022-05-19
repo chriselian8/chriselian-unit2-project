@@ -89,9 +89,10 @@ button:hover {
 #edit-plan {
   background-image: url(https://c1.wallpaperflare.com/preview/265/345/113/paper-page-background-texture.jpg);
   text-align: center;
-  width: 45%;
+  width: 55%;
   box-shadow: 5px 5px 7px black;
   padding: 10px;
+  margin-top: 20px;
 }
 #edit-plan label {
   display: inline-block;
@@ -103,8 +104,12 @@ button:hover {
   font-size: 20px;
 }
 #edit-plan input {
-  margin-left: 5px;
+  margin-left: 0px;
   padding: 15px;
+  border-radius: 7px;
+}
+#edit-plan input:hover {
+  box-shadow:1px 1px 10px black;
 }
 #save-changes {
   margin-top: 15px;
